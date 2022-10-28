@@ -1,5 +1,11 @@
+//! # statistical-analysis
+//! 
+//! This crate provides different utilities for making 
+//! simple statistical calculations.
+
 pub mod measures_of_central_tendency;
 pub mod measures_of_dispersion; // range, interquartile range, standard deviation, variance
+
 
 #[cfg(test)]
 mod tests_for_measures_of_central_tendency {

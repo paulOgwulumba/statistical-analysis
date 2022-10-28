@@ -1,3 +1,7 @@
+//! # measures_of_central_tendency
+//! This module contains utilities for performing measures of 
+//! central tendency on numerical data sets.
+
 use std::collections::HashMap;
 
 pub fn get_mean(data: Vec<i32>) -> Option<f32> {

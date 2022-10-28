@@ -1,3 +1,16 @@
+//! # measures_of_dispersion
+//! This module contains utilities for performing measures of 
+//! central tendency on numerical data sets.
+
+/// This calculates the range of a numerical data set.
+/// A range is defined as the difference between the highest value in the
+/// data set and the lowest value of the data set.
+/// 
+/// # Example
+/// ```
+/// let mut data = vec![1, 3, 5, 6];
+/// let range = measures_of_dispersion::get_range(data);
+/// ```
 pub fn get_range(mut _data: Vec<i32>) -> Option<i32> {
   match _data.len() {
     0 => None,
@@ -10,6 +23,7 @@ pub fn get_range(mut _data: Vec<i32>) -> Option<i32> {
   }
 }
 
+/// This calculates the interquartile range of a numerical data set.
 pub fn get_interquartile_range(mut _data: Vec<i32>) -> Option<f32> {
   match _data.len() {
     0 => None,
